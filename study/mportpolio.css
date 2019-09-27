@@ -1,0 +1,59 @@
+﻿/* 스타일 초기화 */
+* { margin: 0px ; padding: 0px ; }
+header, body, footer { font-size: 14px; font-family: 나눔고딕,굴림,돋음,'Times New Roman',serif; width: 100%; }
+header, footer { text-align : center ; }
+header{}
+body { margin: auto; }
+footer { position: fixed; bottom: 0px; }
+
+/* 공통 스타일 */
+h1 { padding: 15px; font-size: 30px ; color: white; }
+h2 { font-size: 20px; color: #176dfd; margin:30px; }
+h3 { margin: 10px; font-size: 15px; color: #2dbaf0; /* text-shadow: 4px 4px 7px green; */ }
+h1, h2 { background-image: url(bg.jpg); background-repeat: repeat-x; }
+tr{height: 25px}
+
+
+img { border: 0; padding: 2px; }
+span{}
+nav { margin: 0px;  height:27px; }
+
+nav > span > a { font-style: bold; text-decoration: none;; color: white; 
+font-size: 15px; width:100%; text-align: center;
+background-color:skyblue;padding-left: 29px;padding-right: 29px;
+padding-top:10px;padding-bottom:10px;}
+
+nav > span > a:hover { background: #ff80ff; color: white; }
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+	section { width: 80%; float: left; }
+	aside { width: 20%; text-align: center; float: right; }
+	footer { clear: both; }
+}
+
+.selected{
+    background-color: red;
+}
+
+.content  { clear: both; margin-left:10px;}
+.profile { border: 2px solid white; height: 120px; position: relative;
+padding-top: -2px}
+.section1 ul li { list-style-position: inside; list-style-image: url("li.jpg"); margin-bottom: 2%; }
+
+/* mintro.html 적용 스타일 */
+#stu-pic { width: 6em; height: 8em; float: left; }
+
+/* minfo.html 적용 스타일 */
+#year-table { table-layout: auto; width: 80%; seperate;margin-top:10px;}
+#year-table thead { background: lightblue; }
+#logo { position: fixed; bottom:10px; left: -50px; opacity: 0.3; } 
+
+/* mstudy.html 적용 스타일 */
+video { margin: 5px; width: 300px; height: 200px; }
+
+/* mcareer.html 적용 스타일 */
+.semi-pic { width: 4em; height: 3em;  }
+#pic-container { overflow: hidden; }
+#pic-container:hover { height: 220px; }
+#pic1:hover { -webkit-transform: translate(150px,50px) scale(7,7); transform: scale(0.5); }
+#pic2:hover { -webkit-transform: translate(100px,50px) scale(7,7) ; transform: scale(0.5); }
+#pic3:hover { -webkit-transform: translate(30px,50px) scale(7,7); transform: scale(0.5); }
